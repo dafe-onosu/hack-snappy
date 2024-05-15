@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.SearchButton {
+  background-image: url('./assets/search.svg');
+
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-size: cover;
+  background-position: center;
+  width: 50px;  /* Adjust the width */
+  height: 50px;  /* Adjust the height */
+  background-color: white;
+  margin: 0px auto;
+}
+
+.WebcamCapture {
+  margin: 0px auto;
 }

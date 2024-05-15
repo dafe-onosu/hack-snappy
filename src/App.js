@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+
+import logoMS from './logoMS.svg';
 import './App.css';
 import WebcamCapture from './WebcamCapture';
 import { useState } from 'react';
@@ -9,9 +10,11 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <button onClick={handleWebcam(true)}>Snap to Shop</button>
-        {webcam && <WebcamCapture />}
+      <img src={logoMS} alt="Marks & Spencer logo" />
+     
+        {webcam ? <WebcamCapture /> :
+           <button onClick={handleWebcam(true)}>Snap to Shop</button> 
+      }
       </header>
     </div>
   );
