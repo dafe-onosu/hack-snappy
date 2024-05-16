@@ -68,14 +68,16 @@ const WebcamCapture = () => {
           </p>
         </div>
       ) : (
-        <div style={{ margin: '0px auto' }}>
-          <div style={{ margin: '0px auto' }}>
+        //style={{ width:'200px', height:'200px', overflow:'none' }}
+        //style={{ margin: 'auto 10px', width:'100px' }}
+        <div >
+          <div >
             <Webcam
               audio={false}
               ref={webcamRef}
               screenshotFormat='image/jpeg'
-              width={640}
-              height={480}
+              width={360}
+              height={720}
               videoConstraints={videoConstraints}
               className='WebcamCapture'
             />
