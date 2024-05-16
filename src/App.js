@@ -1,4 +1,3 @@
-
 import logoMS from './logoMS.svg';
 import './App.css';
 import WebcamCapture from './WebcamCapture';
@@ -10,12 +9,21 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-      <img src={logoMS} alt="Marks & Spencer logo" />
-     
-        {webcam ? <WebcamCapture /> :
-           <button onClick={handleWebcam(true)}>Snap to Shop</button> 
-      }
+        <img src={logoMS} alt='Marks & Spencer logo' />
       </header>
+      <div>
+        {webcam ? (
+          <WebcamCapture />
+        ) : (
+          <div>
+            <p style={{ fontSize: '18px' }}>
+              Seen something you like? <br />
+              Search for it with snap
+            </p>
+            <button onClick={handleWebcam(true)} className='SnapButton' />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

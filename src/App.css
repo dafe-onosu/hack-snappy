@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  max-width: 480px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 10px;
 }
 
 .App-logo {
@@ -15,7 +19,7 @@
 
 .App-header {
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +43,6 @@
 
 .SearchButton {
   background-image: url('./assets/search.svg');
-
   border: none;
   padding: 0;
   cursor: pointer;
@@ -49,8 +52,22 @@
   appearance: none;
   background-size: cover;
   background-position: center;
-  width: 50px;  /* Adjust the width */
-  height: 50px;  /* Adjust the height */
+  width: 50px; /* Adjust the width */
+  height: 50px; /* Adjust the height */
+  background-color: white;
+  margin: 0px auto;
+}
+
+.SnapButton {
+  background-image: url('./assets/snap.png');
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  background-size: cover;
+  background-position: center;
+  width: 80%; /* Adjust the width */
+  height: 60px; /* Adjust the height */
   background-color: white;
   margin: 0px auto;
 }
