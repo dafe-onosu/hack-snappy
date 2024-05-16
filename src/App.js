@@ -18,7 +18,7 @@ function App() {
           <div>
             <p
               style={{
-                fontSize: "1em",
+                fontSize: "1.2em",
                 fontFamily: "Georgia, serif",
               }}
             >
