@@ -15,7 +15,7 @@ const WebcamCapture = () => {
   const videoConstraints = {
     width: { min: 480 },
     height: { min: 720 },
-    facingMode: 'user',
+    facingMode: { exact: 'environment' },
   };
 
   const captureImage = useCallback(async () => {
@@ -77,7 +77,7 @@ const WebcamCapture = () => {
               ref={webcamRef}
               screenshotFormat='image/jpeg'
               width={360}
-              height={720}
+              height={600}
               videoConstraints={videoConstraints}
               className='WebcamCapture'
             />
